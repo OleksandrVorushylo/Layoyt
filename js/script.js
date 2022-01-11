@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 /* eslint-disable no-use-before-define */
 /* eslint-disable no-undef */
 window.addEventListener('DOMContentLoaded', () => {
@@ -160,8 +161,8 @@ window.addEventListener('DOMContentLoaded', () => {
 		const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
 
 		$progressBar
-			.css('background-size', `${calc + 36}% 100%`)
-			.attr('value', calc);
+			.css('background-size', `${calc}% 100%`)
+			.attr('value', calc + 36);
 	}
 
 	const $slider = $('.slider-bottom');
