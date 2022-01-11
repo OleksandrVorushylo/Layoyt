@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loyaut</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrap">
+        <div class="header__left">
+          <a href="#" class="logo header__logo">Yooosi</a>
+          <button class="header__menu-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="header__dropdown-dots">
+              <a href="#">Account</a>
+              <a href="#">My subscrible</a>
+              <a href="#">History</a>
+              <a class="header__logout" href="#">Logout</a>
+            </div>
+          </button>
+          <button class="button-icon header__favorites">
+            <img src="img/icon/favorites.png" alt="">
+          </button>
+          <button class="button-icon header__message">
+            <img src="img/icon/message.png" alt="">
+            <span class="header__counter">5</span>
+            <div class="header__dropdown-message">
+              <a href="#">
+                <img src="img/icon/message/icon.png" alt="Author">
+                <h5>Robert Davidson</h5>
+                <span>31 october 2019</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure dolorem praesentium debitis numquam architecto libero, impedit odio, sapiente obcaecati voluptas ullam amet cupiditate distinctio rerum eos. Repellat, libero rem.</p>
+              </a>
+              <a href="#">
+                <img src="img/icon/message/icon.png" alt="Author">
+                <h5>Robert Davidson</h5>
+                <span>31 october 2019</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure dolorem praesentium debitis numquam architecto libero, impedit odio, sapiente obcaecati voluptas ullam amet cupiditate distinctio rerum eos. Repellat, libero rem.</p>
+              </a>
+              <a href="#">
+                <img src="img/icon/message/icon.png" alt="Author">
+                <h5>Robert Davidson</h5>
+                <span>31 october 2019</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iure dolorem praesentium debitis numquam architecto libero, impedit odio, sapiente obcaecati voluptas ullam amet cupiditate distinctio rerum eos. Repellat, libero rem.</p>
+              </a>
+            </div>
+          </button>
+        </div>
+        <!-- /.header__left -->
+        <div id="searchSection" class="header__center">
+          <button class="header__search-button">
+            <img src="img/icon/search.png" alt="">
+          </button>
+          <div class="header__search">
+            <span class="icon"><img src="img/icon/search.png" alt=""></span>
+            <input type="search" id="search" placeholder="Search..." />
+          </div>
+          <div class="header__dropdown-content">
+            <a href="#">Robert Davidson</a>
+            <a href="#">Robert Smith</a>
+            <a href="#">Robert Hadson</a>
+            <a href="#">Robert Mickson</a>
+          </div>
+        </div>
+        <!-- /.header__center -->
+        <div class="header__right">
+          <button class="header__language">
+            <span>Hebrew</span>
+            <span class="header__language-phone">He</span>
+            <img src="img/icon/arrow.png" alt="">
+          </button>
+          <div class="header__dropdown-language">
+            <a href="#">Hebrew</a>
+            <a class="header__logout" href="#">English</a>
+          </div>
+          <button class="button header__button">Start broadcast</button>
+          <div class="menu header__menu">
+            <button class="menu-button menu-line header__menu-button header__menu-line">
+              <span>меню</span>
+            </button>
+          </div>
+          <!-- /.menu header-menu -->
+        </div>
+        <!-- /.header__right -->
+      </div>
+      <!-- /.header__wrap -->
+    </div>
+    <!-- /.container -->
+    <nav class="header-nav">
+      <ul class="header-nav__list">
+        <li class="header-nav__item">
+          <a href="#" class="link-nav header-nav__link">Be-fan</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#" class="link-nav header-nav__link">Live Yooosi</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#" class="link-nav header-nav__link">For streemers</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#" class="link-nav header-nav__link">broadcast chedule</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#" class="link-nav header-nav__link">about us</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#" class="link-nav header-nav__link">My Favorites</a>
+        </li>
+        <li class="header-nav__item">
+          <a href="#" class="link-nav header-nav__link header-nav__link--messages">My messages</a>
+        </li>
+        <div class="header-nav__apps">
+          <a class="link-nav header-nav__link-app" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/apps/app-store.png" alt="App">
+          </a>
+          <a class="link-nav header-nav__link-app" href="#" target="_blank" rel="noopener noreferrer">
+            <img src="img/icon/apps/google-play.png" alt="App">
+          </a>
+        </div>
+        <!-- /.header-nav__apps -->
+      </ul>
+    </nav>
+    <!-- /.header-nav -->
+    <span class="header-nav-bg"></span>
+  </header>
+  <!-- /.header -->
+  <main>
+    <section class="sliders">
+      <div class="slider-top">
+        <div class="slider-top__item">
+          <img src="img/slider/bg-1.jpg" alt="" class="slider-top__image">
+          <div class="container">
+            <div class="slider-top__content">
+              <div class="slider-top__text">
+                <h2>Poster Name</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde
+                omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
+                inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi
+                tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+              </div>
+              <div class="slider-top__buttons">
+                <button class="button slider-top__button">start watching</button>
+                <a href="#" class="slider-top__link">To author’s page</a>
+                <button class="favorite slider-top__favorite"></button>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.slider-top__item -->
+        <div class="slider-top__item">
+          <img src="https://www.lightstalking.com/wp-content/uploads/pexels-photo-1-115.jpeg" alt="" class="slider-top__image">
+          <div class="container">
+
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.slider-top__item -->
+        <div class="slider-top__item">
+          <img src="https://crossarea.ru/wp-content/uploads/2018/07/chto-takoe-graffiti.jpg" alt="" class="slider-top__image">
+          <div class="container">
+
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.slider-top__item -->
+        <div class="slider-top__item">
+          <img src="img/slider/bg-4.jpg" alt="" class="slider-top__image">
+          <div class="container">
+
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.slider-top__item -->
+        <div class="slider-top__item">
+          <img src="img/slider/bg-1.jpg" alt="" class="slider-top__image">
+          <div class="container">
+
+          </div>
+          <!-- /.container -->
+        </div>
+        <!-- /.slider-top__item -->
+      </div>
+      <!-- /.slider-top -->
+      <div class="container">
+              <div class="slider-bottom">
+                <div class="slider-bottom__item">
+                  <img class="slider-bottom__img" src="img/slider/img-1.png" alt="">
+                  <div class="slider-bottom__content">
+                    <div class="slider-bottom__buttons">
+                      <button class="favorite slider-bottom__favorite"></button>
+                      <button class="button slider-bottom__button">start watching</button>
+                    </div>
+                    <a class="slider-bottom__link" href="#" target="_blank" rel="noopener noreferrer">
+                      <h3>Poster Name</h3>
+                      <img src="img/icon/slider/arrow-down.png" alt="Link">
+                    </a>
+                  </div>
+                  <div class="slider-bottom__current"></div>
+                </div>
+                <!-- /.slider-bottom__item -->
+                <div class="slider-bottom__item">
+                  <img class="slider-bottom__img" src="img/slider/img-2.png" alt="">
+                  <div class="slider-bottom__content">
+                    <div class="slider-bottom__buttons">
+                      <button class="favorite slider-bottom__favorite"></button>
+                      <button class="button slider-bottom__button">start watching</button>
+                    </div>
+                    <a class="slider-bottom__link" href="#" target="_blank" rel="noopener noreferrer">
+                      <h3>Poster Name</h3>
+                      <img src="img/icon/slider/arrow-down.png" alt="Link">
+                    </a>
+                  </div>
+                  <div class="slider-bottom__current"></div>
+                </div>
+                <!-- /.slider-bottom__item -->
+                <div class="slider-bottom__item">
+                  <img class="slider-bottom__img" src="img/slider/img-3.png" alt="">
+                  <div class="slider-bottom__content">
+                    <div class="slider-bottom__buttons">
+                      <button class="favorite slider-bottom__favorite"></button>
+                      <button class="button slider-bottom__button">start watching</button>
+                    </div>
+                    <a class="slider-bottom__link" href="#" target="_blank" rel="noopener noreferrer">
+                      <h3>Poster Name</h3>
+                      <img src="img/icon/slider/arrow-down.png" alt="Link">
+                    </a>
+                  </div>
+                  <div class="slider-bottom__current"></div>
+                </div>
+                <!-- /.slider-bottom__item -->
+                <div class="slider-bottom__item">
+                  <img class="slider-bottom__img" src="img/slider/img-4.png" alt="">
+                  <div class="slider-bottom__content">
+                    <div class="slider-bottom__buttons">
+                      <button class="favorite slider-bottom__favorite"></button>
+                      <button class="button slider-bottom__button">start watching</button>
+                    </div>
+                    <a class="slider-bottom__link" href="#" target="_blank" rel="noopener noreferrer">
+                      <h3>Poster Name</h3>
+                      <img src="img/icon/slider/arrow-down.png" alt="Link">
+                    </a>
+                  </div>
+                  <div class="slider-bottom__current"></div>
+                </div>
+                <!-- /.slider-bottom__item -->
+                <div class="slider-bottom__item">
+                  <img class="slider-bottom__img" src="img/slider/img-1.png" alt="">
+                  <div class="slider-bottom__content">
+                    <div class="slider-bottom__buttons">
+                      <button class="favorite slider-bottom__favorite"></button>
+                      <button class="button slider-bottom__button">start watching</button>
+                    </div>
+                    <a class="slider-bottom__link" href="#" target="_blank" rel="noopener noreferrer">
+                      <h3>Poster Name</h3>
+                      <img src="img/icon/slider/arrow-down.png" alt="Link">
+                    </a>
+                  </div>
+                  <div class="slider-bottom__current"></div>
+                </div>
+                <!-- /.slider-bottom__item -->
+              
+              </div>
+              <!-- /.slider-bottom -->
+              <div class="sliders__progress-wrap">
+                <progress class="sliders__progress" role="progressbar" value="0" max="100">
+                </progress>
+                <div class="sliders__progress-bg"></div>
+              </div>
+      </div>
+      <!-- /.container -->
+      <div class="background-slider-bottom"></div>
+    </section>
+    <!-- /.sliders -->
+    <section class="apps">
+      <div class="container">
+        <div class="apps__wrap">
+          <div class="apps__title">
+            <h4>Available now</h4>
+            <h1>The Yooosi app</h1>
+          </div>
+          <div class="apps__buttons">
+            <a class="apps__button" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="apps__img" src="img/icon/apps/apple.png" alt="App">
+            </a>
+            <a class="apps__button" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="apps__img apps__img--android" src="img/icon/apps/android.png" alt="App">
+            </a>
+            <a class="apps__button" href="#" target="_blank" rel="noopener noreferrer">
+              <img class="apps__img apps__img--fb" src="img/icon/apps/fb.png" alt="App">
+            </a>
+          </div>
+        </div>
+        <!-- /.apps__wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.apps -->
+  </main>
+
+  <script src="js/plugins/jquery-3.6.0.min.js"></script>
+  <script src="js/plugins/jquery-migrate-1.4.1.min.js"></script>
+  <script src="js/plugins/slick.min.js"></script>
+  <script src="//cdn.jsdelivr.net/jquery.mcustomscrollbar/3.0.6/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="js/plugins/hilitor.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+.slider-top
+  width: 100%
+  height: 840px
+  transition: all 0.3s ease
+  // background-image: linear-gradient(to top, rgba(27, 27, 31, 0.9) 0%, rgba(40, 40, 45, 0) 100%)
+  &__item
+    position: relative
+    height: 100%
+    width: 100%
+    background-image: linear-gradient(to top, rgba(27, 27, 31, 0.85) 50%, rgba(40, 40, 45, 0) 100%)
+    transition: all 0.3s ease
+    padding-top: 314px
+  &__image
+    position: absolute
+    margin: auto
+    z-index: -1
+    top: 0
+    height: 100%
+    width: 100%
+    object-fit: cover
+  &__content
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    width: 100%
+  &__text
+    width: 622px
+    height: 110px
+    // overflow: hidden
+    color: #fff
+    margin-left: -7px
+  &__text h2
+    margin-left: 29px
+    font-size: 18px
+    font-weight: 500
+    font-style: normal
+    letter-spacing: normal
+    text-transform: uppercase
+    line-height: 18px
+    margin-bottom: 21px
+    margin-top: -1px
+  &__text p
+    margin-left: 30px
+    font-size: 16px
+    font-weight: 300
+    font-style: normal
+    letter-spacing: normal
+    line-height: 26px
+    text-align: left
+    color: $text-gray
+  &__buttons
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 441px
+    height: 40px
+  &__button
+    padding: 0px 22px
+  &__link
+    color: #fff
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 14px
+    letter-spacing: 0.42px
+    line-height: 18px
+    font-weight: 700
+    padding: 0px 0px
+    padding-top: 10px
+    height: 40px
+    border-bottom: 2px solid $pink
+    transition: all 0.3s ease
+    &:hover
+      border-bottom: 8px solid #8d76b2b0
+      transition: all 0.3s ease
+
+  &__favorite
+.slider-top .slick-track
+  height: 840px
+// .slider-top .slick-slide
+//   z-index: -1 !important
+// .slider-top .slick-current
+//   z-index: auto !important
+// .slider-top .slick-track
+//   height: 840px
+
+.mCSB_scrollTools
+  left: 0!important
+  right: auto!important
+.mCS-dark-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .mCS-light-thin.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+  width: 4px
+.mCSB_scrollTools .mCSB_draggerRail
+  height: 300%
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+  width: 4px
+  height: 107px
+  background-color: #8d76b2 !important
+  border-radius: 0px
+.mCSB_scrollTools
+  opacity: 1
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar
+  background-color: #8d76b2
+.mCSB_container
+  margin-right: 0 !important

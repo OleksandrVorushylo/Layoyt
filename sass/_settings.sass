@@ -1,0 +1,78 @@
+*
+  box-sizing: border-box
+img
+  margin: 0
+  max-width: 100%
+li
+  list-style-type: none
+h1, h2, h3, h4, p
+  margin: 0
+button, input, a
+  outline: none
+  cursor: pointer
+  color: $black
+html
+  overflow-x: hidden
+  height: 100%
+body
+  color: $black
+  font-family: 'Ubuntu', sans-serif
+  font-size: 18px
+  font-weight: 400
+  font-style: normal
+  letter-spacing: normal
+  line-height: normal
+  overflow-x: hidden
+.container
+  width: 79.64%
+  max-width: 1529px
+  margin: auto
+.button
+  height: 40px
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  border: none
+  border-radius: 2px
+  background-color: $pink
+  color: #fff
+  font-family: Ubuntu
+  font-size: 14px
+  font-weight: 700
+  font-style: normal
+  line-height: 18px
+  letter-spacing: 0.42px
+  text-transform: uppercase
+  text-decoration: none
+  transition: all 0.3s ease
+  &:hover
+    transition: all 0.3s ease
+    background-color: #8d76b2b0
+.button-icon
+  border: none
+  padding: 0
+  background-color: transparent
+  display: flex
+  align-items: center
+.button-icon img
+  height: 100%
+
+.favorite
+  border: none
+  width: 23px
+  height: 20px
+  background: url(../img/icon/slider/favorite.png) 0 0/100% no-repeat
+  transition: all 0.3s ease
+  &:hover
+    transition: all 0.3s ease
+    opacity: 0.5
+  &--selected
+    background: url(../img/icon/slider/favorite-selected.png) 0 0/100% no-repeat
+    &:hover
+      transition: all 0.3s ease
+      opacity: 1.0
+      filter: brightness(1.5)
+
+.slick-track
+  display: flex

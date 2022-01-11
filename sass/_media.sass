@@ -1,0 +1,177 @@
+@media (max-width: 1550px)
+  .container
+    width: 90%
+  .header
+    &__button
+      margin: 0
+    &__center
+      width: 300px
+      margin: 0
+    &__search input
+      width: 80%
+@media (max-width: 1200px)
+  .container
+    width: 95%
+  .header
+    &__button
+      margin: 0
+    &__center
+      width: auto
+      margin: 0
+    &__search-button
+      display: flex
+    &__search
+      transition: all 0.3s ease
+      display: none
+      position: absolute
+      z-index: 1020
+      top: 0
+      width: 300px
+      &--active
+        display: block
+        background-color: #fff
+        transition: all 0.3s ease
+        top: 54px
+    &__search input
+      width: 90%
+    &__search span
+      display: none
+    &__dropdown-content
+      top: 94px
+      width: 300px
+  .sliders
+    &__progress-bg
+      width: 80%
+    &__progress
+      width: 80%
+@media (max-width: 992px)
+  .header
+    &__button
+      margin: 0
+    &__center
+      width: auto
+      margin: 0
+      display: flex
+      justify-content: center
+      align-items: center
+    &__search-button
+      display: flex
+      width: 20px
+      height: 20px
+      border: none
+    &__search-button
+
+    &__search
+      transition: all 0.3s ease
+      display: none
+      position: absolute
+      z-index: 1020
+      top: 0
+      width: 300px
+      &--active
+        display: block
+        background-color: #fff
+        transition: all 0.3s ease
+        top: 54px
+    &__search input
+      width: 90%
+    &__search span
+      display: none
+    &__dropdown-content
+      top: 94px
+      width: 300px
+    &__language span
+      display: none
+    &__language
+      display: flex
+      justify-content: space-between
+      align-items: center
+      &-phone
+        display: flex !important
+    &__favorites
+      display: none
+    &__left
+      width: 200px
+
+  .slider-top
+    &__item
+      padding-top: 200px
+    &__content
+      flex-direction: column
+      align-items: start
+    &__buttons
+      margin-top: 40px
+    &__text
+      width: 100%
+@media (max-width: 767px)
+  .header
+    &__button
+      display: none
+    &__left
+      width: 260px
+    &__right
+      width: 100px
+    &__dropdown-language
+      left: -150px
+    &__dropdown-message
+      position: fixed
+      left: 0
+      top: 69px
+      width: 320px
+    &-nav
+      width: 100vw
+      right: -110vw
+      transition: all 1s ease
+      &--active
+        right: 0
+        left: 0
+        transition: all 1s ease
+        padding-left: 10px
+      &__link
+        font-size: 18px
+    &__search
+      &--active
+        position: fixed
+        top: 68px
+        left: 0
+        height: 40px
+
+    &__search input
+      width: 90%
+    &__search span
+      display: none
+    &__dropdown-content
+      position: fixed
+      top: 102px
+      left: 0
+      width: 300px
+    &__message
+      display: none
+    &__left
+      width: 160px
+  .slider-top
+    &__item
+      padding-top: 160px
+    &__buttons
+      margin-top: 40px
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: start
+      height: 120px
+      width: 172px
+    &__text
+      width: 100%
+  .slider-bottom .slick-slide
+    margin: 0 8px
+  .slider-bottom .slick-list
+    margin-left: 0
+    margin-right: 0
+  .apps
+    &__wrap
+      display: flex
+      flex-direction: column
+      padding-top: 60px
+    &__buttons
+      margin: 0
+      margin-top: 30px

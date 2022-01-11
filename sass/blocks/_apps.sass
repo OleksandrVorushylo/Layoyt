@@ -1,0 +1,61 @@
+.apps
+  position: relative
+  z-index: 100
+  width: 100%
+  height: 266px
+  background: url(../img/apps/bg.png) center/cover no-repeat
+  margin-top: -5px
+  &__wrap
+    padding-top: 110px
+    padding-bottom: 92px
+    display: flex
+    height: 266px
+
+  &__title
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    height: 100%
+    text-transform: uppercase
+  &__title h4
+    color: #cbb8ea
+    font-size: 18px
+    font-weight: 500
+    line-height: 18px
+    transform: translateY(-12px)
+  &__title h1
+    color: #fff
+    font-size: 36px
+    font-weight: 700
+    letter-spacing: 0.9px
+
+  &__buttons
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 272px
+    margin-left: 77px
+    margin-bottom: 7px
+  &__img
+    transition: all 0.3s ease
+    &--android
+      filter: brightness(10.0)
+      margin-left: 0
+    &--fb
+      margin-left: -2px
+  &__button
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    width: 60px
+    height: 60px
+    background-color: #8d76b2
+    border: none
+    border-radius: 50%
+    transition: all 0.3s ease
+    &:hover
+      transition: all 0.3s ease
+      background-color: #f2eef7
+    &:hover .apps__img
+      filter: brightness(0)

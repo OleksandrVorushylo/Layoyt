@@ -1,0 +1,407 @@
+.header
+  position: fixed
+  z-index: 900
+  width: 100%
+  background-color: #fff
+  &__wrap
+    height: 69px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  // - Левая часть header -
+  &__left
+    width: 299px
+    height: 21px
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 30px
+    font-weight: 700
+    letter-spacing: 1.2px
+  &__menu-dots
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    height: 100%
+    width: 6px
+    border: none
+    background-color: transparent
+    padding: 0
+    margin-left: -22px
+  &__menu-dots span
+    background-color: $black
+    border-radius: 50%
+    margin-left: 1px
+  &__menu-dots span:nth-child(1)
+    display: block
+    padding: 2px
+    border-radius: 50%
+  &__menu-dots span:nth-child(2)
+    display: block
+    padding: 3px
+    border-radius: 50%
+  &__menu-dots span:nth-child(3)
+    display: block
+    padding: 2px
+    border-radius: 50%
+  &__dropdown-dots
+    display: none
+    position: absolute
+    z-index: 1008
+    background-color: #ffffff
+    width: 200px
+    flex-direction: column
+    right: -160px
+    top: 45px
+    border: 1px solid #e6e6ee
+    &--active
+      display: flex
+  &__dropdown-dots a
+    position: relative
+    width: 100%
+    height: 40px
+    padding-left: 40px
+    padding-right: 20px
+    padding-top: 10px
+    padding-bottom: 10px
+    font-size: 16px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    text-decoration: none
+  &__logout
+    margin-top: 20px
+    margin-bottom: 10px
+    color: gray
+  &__favorites
+    margin-right: -32px
+    object-fit: cover
+  &__message
+    position: relative
+    object-fit: cover
+  &__counter
+    position: absolute
+    right: -17px
+    top: -15px
+    width: 25px
+    height: 25px
+    border-radius: 50%
+    color: #fff
+    background-color: $pink
+    font-size: 14px
+    font-weight: 700
+    text-align: center
+    display: flex
+    justify-content: center
+    align-items: center
+
+  &__dropdown-message
+    display: none
+    position: absolute
+    z-index: 1009
+    background-color: #ffffff
+    width: 400px
+    flex-direction: column
+    top: 44px
+    border: 1px solid #e6e6ee
+    border-bottom: none
+    &--active
+      display: flex
+  &__dropdown-message a
+    position: relative
+    width: 100%
+    height: 100px
+    padding-left: 20px
+    padding-right: 20px
+    padding-top: 10px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    text-decoration: none
+    padding-left: 80px
+    border-bottom: 1px solid #e6e6ee
+  &__dropdown-message a img
+    position: absolute
+    top: 20px
+    left: 10px
+    object-fit: cover
+    border-radius: 50%
+    width: 50px
+    height: 50px
+  &__dropdown-message a h5
+    margin: 0
+    font-size: 14px
+    font-weight: 500
+    text-transform: uppercase
+  &__dropdown-message a span
+    color: $pink
+    font-size: 14px
+    font-weight: 700
+  &__dropdown-message p
+    margin: 0
+    font-size: 14px
+    font-weight: 500
+    width: 100%
+    height: 50px
+    overflow: hidden
+    text-align: left
+
+  // - Центральная часть header -
+  &__center
+    position: relative
+    width: 360px
+    height: 40px
+    margin-left: 112px
+  &__search-button
+    display: none
+    border: none
+    border: 1px solid $gray
+    border-radius: 2px
+    padding: 0
+    background-color: transparent
+    align-items: center
+    justify-content: center
+    text-align: center
+    height: 40px
+    width: 80px
+  &__search
+    position: relative
+    width: 100%
+    height: 100%
+    border-radius: 2px
+    border: 1px solid $gray
+  &__search input
+    height: 100%
+    border: none
+    margin-left: 17px
+    &::placeholder
+      font-size: 16px
+      line-height: 18px
+      color: $placeholder-color
+  &__search span
+    position: absolute
+    top: 50%
+    right: 19px
+    margin-top: -10px
+  &__search span img
+    object-fit: cover
+  &__dropdown-content
+    display: none
+    position: absolute
+    z-index: 1010
+    background-color: #ffffff
+    width: 360px
+    flex-direction: column
+    border: 1px solid #e6e6ee
+    border-top: none
+    &--search
+      display: flex
+  &__dropdown-content a
+    width: 100%
+    height: 40px
+    padding-left: 20px
+    padding-right: 20px
+    display: flex
+    align-items: center
+    text-decoration: none
+
+  // - Правая часть header -
+  &__right
+    width: 412px
+    height: 40px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    position: relative
+  &__language
+    font-size: 16px
+    line-height: 18px
+    cursor: pointer
+    margin-left: -2px
+    margin-bottom: 2px
+    text-decoration: none
+    border: none
+    background-color: transparent
+    &-phone
+      display: none
+  &__language img
+    margin-left: 6px
+  &__dropdown-language
+    display: none
+    position: absolute
+    z-index: 1008
+    background-color: #ffffff
+    width: 200px
+    flex-direction: column
+    top: 54px
+    border: 1px solid #e6e6ee
+    &--active
+      display: flex
+  &__dropdown-language a
+    position: relative
+    width: 100%
+    height: 40px
+    padding-left: 40px
+    padding-right: 20px
+    padding-top: 10px
+    padding-bottom: 10px
+    font-size: 16px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    text-decoration: none
+  &__logout
+    margin: 0
+    color: gray
+
+  &__button
+    // padding: 0px 19px
+    padding-left: 17px
+    padding-right: 18px
+    padding-top: 2px
+    margin-left: 12px
+  &__menu:focus
+    outline: none
+  &__menu
+    position: relative
+    height: 100%
+    width: 50px
+    &-button
+      display: block
+      position: absolute
+      right: 0
+      top: 0
+      overflow: hidden
+      margin: 0
+      padding: 0
+      width: 50px
+      height: 40px
+      font-size: 0
+      box-shadow: none
+      cursor: pointer
+      background-color: transparent
+      border: none
+    &-button:focus
+      outline: none
+    &-button span
+      display: block
+      position: absolute
+      top: 20px
+      left: 10px
+      right: 0px
+      height: 2px
+      background: $black
+    &-button span::before, .menu-button span::after
+      position: absolute
+      display: block
+      left: 0
+      width: 100%
+      height: 2px
+      background: $black
+      content: ""
+    &-button span::before
+      top: -8px
+      margin-left: 7px
+    &-button span::after
+      bottom: -8px
+      margin-left: 17px
+    &-line span
+      transition: all 0.3s ease
+    &-line span::before, .menu-line span::after
+      transition-duration: 0.3s, 0.3s
+      transition-delay: 0.3s, 0s
+    &-line span::before
+      transition-property: top, transform
+    &-line span::after
+      transition-property: bottom, transform
+    &-line.menu-active
+    &-line.menu-active span
+      background: none
+      width: 0px
+    &-line.menu-active span::before
+      margin-left: 11px
+      width: 33px
+      top: 0
+      transform: rotate(-45deg)
+    &-line.menu-active span::after
+      margin-left: 11px
+      width: 33px
+      bottom: 0
+      transform: rotate(45deg)
+    &-line.menu-active span::before .menu-line.menu-active span::after
+      transition-delay: 0s, 0.3s
+
+// - Меню -
+
+.header-nav
+  position: fixed
+  z-index: 1000
+  width: 600px
+  right: -600px
+  top: 69px
+  bottom: 0
+  background-color: $pink
+  padding-top: 80px
+  padding-left: 80px
+  color: #fff
+  transition: all 1s ease
+  &--active
+    transition: all 1s ease
+    right: 0
+
+  &-bg
+    display: none
+    position: fixed
+    z-index: -999
+    top: 69px
+    left: 0
+    right: 0
+    bottom: 0
+    background-color: #28282d
+    transition: all 0.3s ease
+    opacity: 0
+    &--active
+      display: block
+      z-index: 999
+      opacity: 0.6
+      transition: all 0.3s ease
+  &__list
+    display: flex
+    flex-direction: column
+  &__item
+    margin-bottom: 20px
+    transition: all 0.3s ease
+    &:hover
+      transform: translateX(20px)
+      transition: all 0.3s ease
+  &__link
+    font-size: 30px
+    font-weight: 700
+    font-style: normal
+    letter-spacing: normal
+    line-height: 18px
+    text-transform: uppercase
+    text-decoration: none
+    color: inherit
+    transition: all 0.3s ease
+  &__apps
+    margin-top: 20px
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+
+  &__link-app
+    width: 140px
+    margin-bottom: 20px
+    transition: all 0.3s ease
+    &:hover
+      transform: translateX(20px)
+      transition: all 0.3s ease
+  &__link-app img
+    width: 100%
+    object-fit: cover
