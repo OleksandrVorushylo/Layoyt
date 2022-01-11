@@ -218,34 +218,4 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	$('.slider-top__text').mCustomScrollbar();
 
-	// $(function () {
-	//   	$('.slider-bottom').slick({
-	// 			infinite: false,
-	// 			slidesToShow: 4,
-	// 			slidesToScroll: 1,
-	// // 			responsive: [
-	// //   		{
-	// //     		breakpoint: 768,
-	// //     			settings: {
-	// // 						slidesToShow: 2,
-	// // 						slidesToScroll: 1,
-	// //     			}
-	// //   			},
-	// //   		{
-	// //     		breakpoint: 448,
-	// //     			settings: {
-	// //       			slidesToShow: 1,
-	// // 						slidesToScroll: 1,
-	// //     }
-	// //   }
-	// // ]
-	// 		});
-	// });
-	// (function($) {
-	//   $(window).on('load', function() {
-	//       $('.slider-top__text').mCustomScrollbar();
-	//   });
-	// })(jQuery);
-
-
 });
